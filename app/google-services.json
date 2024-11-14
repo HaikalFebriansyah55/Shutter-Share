@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91502227445",
+    "project_id": "testloginregister-46fdb",
+    "storage_bucket": "testloginregister-46fdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91502227445:android:479fe95255bbabd3543abc",
+        "android_client_info": {
+          "package_name": "com.VVADU.test123"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqKsvoKmQib8wDd6EeLoKfdjcGA1qzOp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

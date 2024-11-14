@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@drawable/border_card"
+    app:cardElevation="0dp"
+    android:id="@+id/card_view">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:src="@drawable/sony_a7"
+            android:scaleType="centerCrop"
+            android:id="@+id/product_img"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:transitionName="kameraImageTransition"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_name"
+            android:textStyle="bold"
+            android:text="Product Name"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

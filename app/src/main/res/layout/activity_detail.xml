@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/white"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="4dp"
+            app:titleTextColor="@android:color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="18dp">
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sony APLHA A7"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerColor="@color/gray"
+                app:dividerThickness="2dp" />
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/sony_a7"
+                android:transitionName="kameraImageTransition"/>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerColor="@color/gray"
+                app:dividerThickness="2dp"/>
+            <TextView
+                android:id="@+id/detail_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sony A7 adalah kamera mirrorless full-frame yang dikenal karena kualitas gambar yang tinggi dan performa yang luar biasa dalam berbagai kondisi pencahayaan. Dikenal dengan sensor CMOS Exmor 35mm yang memungkinkan resolusi tinggi dan rentang dinamis yang luas, A7 menawarkan kemampuan autofocus cepat dan akurat, serta video 4K. Desainnya yang kompak dan ringan membuatnya mudah dibawa, sementara berbagai lensa yang kompatibel memperluas kreativitas pengguna. Kamera ini sangat populer di kalangan fotografer profesional dan penggemar serius berkat kombinasi teknologi canggih dan portabilitas."
+                android:textAlignment="viewStart"
+                android:textSize="18sp"
+                android:padding="5dp"/>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerColor="@color/gray"
+                app:dividerThickness="2dp"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/detai_ck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Sony APLHA A7"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        tools:ignore="DuplicateIds"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end">
+
+                    <Button
+                        android:id="@+id/button_chekout"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Checkout"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_button"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

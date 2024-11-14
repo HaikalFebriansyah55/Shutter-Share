@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner untuk kondisi pencahayaan -->
+    <Spinner
+        android:id="@+id/kondisi_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Input untuk aperture -->
+    <EditText
+        android:id="@+id/aperture_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Aperture (f/stop)"
+        android:inputType="numberDecimal" />
+
+    <!-- Input untuk ISO -->
+    <EditText
+        android:id="@+id/iso_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan ISO"
+        android:inputType="number" />
+
+    <!-- Tombol hitung shutter speed -->
+    <Button
+        android:id="@+id/hitung_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung Shutter Speed" />
+
+    <!-- Menampilkan hasil shutter speed -->
+    <TextView
+        android:id="@+id/hasil_shutter_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shutter Speed: "
+        android:textSize="18sp"
+        android:paddingTop="20dp" />
+
+</LinearLayout>
